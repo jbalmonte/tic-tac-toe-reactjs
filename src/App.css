@@ -1,38 +1,53 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dfdfdf;
+  flex-direction: column;
+  font-family: 'Bevan';
+}
+
+h1{
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+}
+
+td {
+  box-sizing: content-box;
+  background-color: #27282b;
+  color: #16bdca;
+  border-radius: 30%;
+  border: 3px solid #27282b;
+}
+.td{
+  padding: 2rem 2.5rem 1.2rem 2.5rem;
+}
+
+.td:hover {
+  background-color: #16bdca;
+}
+
+.td:hover div {
+  background-color: #27282b;
+}
+
+.td-active {
+  color: #184a51;
+  border: 3px solid #184a51;
+  background-color: inherit;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dot {
+  height: 14px;
+  width: 15px;
+  margin-top: 1.8rem;
+  background: #16bdca;
+  border-radius: 40%;
 }
