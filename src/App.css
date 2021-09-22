@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
-
 main {
   height: 100vh;
   display: flex;
@@ -10,44 +9,131 @@ main {
   font-family: 'Bevan';
 }
 
-h1{
+h1 {
   font-weight: normal;
   letter-spacing: 0.05rem;
-}
-
-td {
-  box-sizing: content-box;
-  background-color: #27282b;
-  color: #16bdca;
-  border-radius: 30%;
-  border: 3px solid #27282b;
-}
-.td{
-  padding: 2rem 2.5rem 1.2rem 2.5rem;
-}
-
-.td:hover {
-  background-color: #16bdca;
-}
-
-.td:hover div {
-  background-color: #27282b;
-}
-
-.td-active {
-  color: #184a51;
-  border: 3px solid #184a51;
-  background-color: inherit;
-  padding: 1rem;
-  font-size: 3rem;
-  font-weight: bold;
   text-align: center;
 }
 
-.dot {
-  height: 14px;
-  width: 15px;
-  margin-top: 1.8rem;
-  background: #16bdca;
-  border-radius: 40%;
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 25%;
+  height: 75px;
+  width: 75px;
+  margin: 4px;
+  padding: 2px;
+  font-size: 50px;
+  font-family: 'Bevan';
+  background-color: #27282b;
+  color: #16bdca;
+}
+
+.element-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 25%;
+  height: 75px;
+  width: 75px;
+  margin: 4px;
+  padding: 2px;
+  font-size: 50px;
+  font-family: 'Bevan';
+  border-width: 2px;
+  border-color: #184a51;
+  background-color: #27282b;
+  color: #184a51;
+}
+
+.element:hover {
+  background-color: #16bdca;
+  color: #27282b;
+}
+
+.state-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.btn-state-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-radius: 25%;
+  height: 32px;
+  width: 32px;
+  margin: 3px;
+  padding: 2px;
+  font-size: 18px;
+  font-family: 'Bevan';
+  border: 2px solid #184a51;
+  color: #184a51;
+  background-color: #27282b;
+}
+
+.btn-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-radius: 25%;
+  height: 32px;
+  width: 32px;
+  margin: 3px;
+  padding: 2px;
+  font-size: 18px;
+  font-family: 'Bevan';
+  border-style: none;
+  color: #16bdca;
+  background-color: #27282b;
+}
+
+.btn-state:hover {
+  background-color: #16bdca;
+  color: #27282b;
+}
+
+.btn-restart {
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 8px;
+  height: auto;
+  width: auto;
+  margin: 5px;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #16bdca;
+  font-family: 'Bevan';
+  color: #27282b;
+}
+
+.btn-restart:hover {
+  opacity: 1;
+}
+
+.btn-restart-disabled {
+  opacity: .3;
 }
