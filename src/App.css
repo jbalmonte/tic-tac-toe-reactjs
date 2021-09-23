@@ -30,32 +30,22 @@ h1 {
   padding: 2px;
   font-size: 50px;
   font-family: 'Bevan';
+}
+
+.element-inactive {
   background-color: #27282b;
   color: #16bdca;
 }
 
 .element-active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-shrink: 0;
-  text-decoration: none;
+  background-color: inherit;
   border-style: solid;
-  border-radius: 25%;
-  height: 75px;
-  width: 75px;
-  margin: 4px;
-  padding: 2px;
-  font-size: 50px;
-  font-family: 'Bevan';
   border-width: 2px;
   border-color: #184a51;
-  background-color: #27282b;
   color: #184a51;
 }
 
-.element:hover {
+.element-inactive:hover {
   background-color: #16bdca;
   color: #27282b;
 }
@@ -68,22 +58,14 @@ h1 {
 }
 
 .btn-state-active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-shrink: 0;
-  text-decoration: none;
-  border-radius: 25%;
-  height: 32px;
-  width: 32px;
-  margin: 3px;
-  padding: 2px;
-  font-size: 18px;
-  font-family: 'Bevan';
   border: 2px solid #184a51;
   color: #184a51;
   background-color: #27282b;
+}
+
+.btn-state-inactive {
+  color: #16bdca;
+  border-style: none;
 }
 
 .btn-state {
@@ -100,12 +82,10 @@ h1 {
   padding: 2px;
   font-size: 18px;
   font-family: 'Bevan';
-  border-style: none;
-  color: #16bdca;
   background-color: #27282b;
 }
 
-.btn-state:hover {
+.btn-state-inactive:hover {
   background-color: #16bdca;
   color: #27282b;
 }
