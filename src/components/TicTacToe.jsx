@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Board from "./Board";
 import Label from "./Label";
 import StateContainer from "./StateContainer";
-import useWinnerChecker from "./usePatternChecker";
-import usePersistedState from "./usePersistedState";
+import useWinnerChecker from "../hooks/usePatternChecker";
+import usePersistedState from "../hooks/usePersistedState";
 
 export default function TicTacToe() {
 
